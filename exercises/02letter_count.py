@@ -1,6 +1,18 @@
 # Write a function called `letter_count` to count the letter
 # occurrence in a string. Use a dictionary.
-#
+
+def letter_count(string):
+    dict = {}
+    for letter in string:
+        if letter in dict:
+            dict[letter] += 1
+        else:
+            dict[letter] = 1
+    print(dict)
+
+letter_count("alpha")
+
+
 # You can iterate over a string one letter at a time using
 # a for loop.
 #
